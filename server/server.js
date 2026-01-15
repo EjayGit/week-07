@@ -11,3 +11,7 @@ app.listen(PORT, (req,res) => {
     console.log(`This app is listening on port ${PORT}`);
 });
 
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to the server API. GET comfy!" });
+});
+
