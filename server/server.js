@@ -42,4 +42,3 @@ app.post("/postblog", async (req, res) => {
         res.status(500).json({ Error: error.message });
     }
 });
-

@@ -7,6 +7,7 @@ export default function ReadBlogs(){
         async function fetchData(){
             const response = await fetch(
                 'http://localhost:8080/readblogs'
+                // 'https://week-07-server.onrender.com/readblogs'
             );
             const data = await response.json();
             console.log("DATA FROM BACKEND:", data);

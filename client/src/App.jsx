@@ -10,7 +10,6 @@ function App() {
   
   return (
     <>
-      <h1>This is where the header should be.</h1>
       <Header/>
       <Routes>
         <Route element={<HomePage/>} path={'/'}/>

@@ -1,9 +1,10 @@
-import NavBar from './NavBar'
+import NavBar from './NavBar';
+import './header.css';
 
 export default function Header(){
     return(
         <>
-            <p>Header</p>
+            <h1>Webpage Title</h1>
             <NavBar />
         </>
     )
