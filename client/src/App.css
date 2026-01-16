@@ -6,5 +6,7 @@
 }
 
 body {
-  background: linear-gradient(0.25turn, #0f77a4, #54ba06, #e3ee0c, #f69d3c);
+    background: repeating-conic-gradient(#383838 0%, #b6b6b6 15%, #383838 33%);
+    height: 100dvh;
+    width: 100dvw;
 }

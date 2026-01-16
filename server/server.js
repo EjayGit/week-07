@@ -31,8 +31,6 @@ app.get('/readBlogs', async (req, res) => {
 app.post("/postblog", async (req, res) => {
     try {
         const {name, post} = req.body.formValues;
-        console.log(req.body);
-        console.log(`Name: ${name}. Post: ${post}.`)
         const query = await db.query(
             `INSERT INTO blogposts (name, blogpost) VALUES ($1, $2)`,
             [name, post]

@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import './postblogs.css'
 
 export default function PostBlogs(){
 
@@ -17,8 +18,8 @@ export default function PostBlogs(){
     function handleFormSubmit(e){
         try{
             e.preventDefault();
-            // fetch('http://localhost:8080/postblog',{
-            fetch('https://week-07-server.onrender.com/postblog',{
+            fetch('http://localhost:8080/postblog',{
+            // fetch('https://week-07-server.onrender.com/postblog',{
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -32,13 +33,12 @@ export default function PostBlogs(){
 
     return(
         <>
-            <h2>Blog Posts</h2>
-            <form onSubmit={handleFormSubmit}>
-                <label htmlFor="name">Name: </label>
-                <input type="text" name='name' value={formValues.staffname} required onChange={handleInputChange}/>
+            <form className='form' onSubmit={handleFormSubmit}>
+                <label className='' htmlFor="name">Name: </label>
+                <input id='form-name' type="text" name='name' placeholder="Name" value={formValues.staffname} required onChange={handleInputChange}/>
 
                 <label htmlFor="post">Blog post: </label>
-                <input type="text" name='post' value={formValues.email} required onChange={handleInputChange}/>
+                <textarea id='form-post' type="text" name='post' rows="4" cols="30" placeholder="Message" value={formValues.email} required onChange={handleInputChange}/>
                 
                 <button type='submit'>Submit</button>
             </form>
