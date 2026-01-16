@@ -6,7 +6,7 @@ import './blogpage.css'
 export default function BlogPage(){
     
     return(
-        <div className='blog-page'>
+        <div className='flex flex-col items-center gap-[10px]'>
             <PostBlogs className='post-blogs'/>
             <ReadBlogs className='read-blogs'/>
         </div>

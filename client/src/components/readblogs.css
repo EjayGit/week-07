@@ -1,5 +1,9 @@
 h2{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin: 10px;
+    text-shadow: 1px 1px 2px rgb(168, 99, 78);
+    color: rgb(204, 204, 204);
 }
 
 .blog {
@@ -17,7 +21,7 @@ h2{
     border: rgb(197, 197, 197) 2px solid;
 
     font-size: 2rem;
-    color: #0a1453;
+    color: #080f3b;
 
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(3.5px);
