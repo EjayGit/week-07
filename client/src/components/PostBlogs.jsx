@@ -17,8 +17,8 @@ export default function PostBlogs(){
     function handleFormSubmit(e){
         try{
             e.preventDefault();
-            fetch('http://localhost:8080/postblog',{
-            //fetch('https://week-07-server.onrender.com/postblog',{
+            // fetch('http://localhost:8080/postblog',{
+            fetch('https://week-07-server.onrender.com/postblog',{
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
