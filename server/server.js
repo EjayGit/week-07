@@ -1,5 +1,6 @@
 import express, { application } from 'express'
 import cors from 'cors'
+import {db} from './dbConnection.js'
 
 const app = express();
 
@@ -15,11 +16,11 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to the server API. GET comfy!" });
 });
 
-app.get('/readForm', async (req, res) => {
+app.get('/readBlogs', async (req, res) => {
     try {
         // const query = await db.query(`SELECT * FROM userData;`);
         const query = await db.query(
-            `SELECT * FROM userData ORDER BY id DESC LIMIT 20 Var1 ORDER BY id ASC;`);
+            `SELECT * FROM blogposts ORDER BY id DESC LIMIT 20`);
         res.json(query.rows);
     } catch (error) {
         console.log("db error: ", error);
@@ -27,15 +28,16 @@ app.get('/readForm', async (req, res) => {
     }
 });
 
-app.post("/sendForm", async (req, res) => {
+app.post("/postblog", async (req, res) => {
     try {
-        const totalCO2 = req.body.totalCO2;
-        const userName = req.body.name;
+        const {name, post} = req.body.formValues;
+        console.log(req.body);
+        console.log(`Name: ${name}. Post: ${post}.`)
         const query = await db.query(
-            `INSERT INTO userdata (totalco2, username) VALUES ($1, $2)`,
-            [totalCO2, userName]
+            `INSERT INTO blogposts (name, blogpost) VALUES ($1, $2)`,
+            [name, post]
         );
-        res.json({ status: "success", values: totalCO2 });
+        res.json({ status: "success" });
     } catch (error) {
         res.status(500).json({ Error: error.message });
     }
