@@ -37,3 +37,13 @@ form button:hover{
 form button:active{
     scale: 1.00;
 }
+
+.form-name{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.form-post{
+    color: whitesmoke;
+    font-weight: bold;
+}
