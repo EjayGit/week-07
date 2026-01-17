@@ -8,7 +8,7 @@
 }
 
 body {
-    background: repeating-conic-gradient(#383838 0%, #b6b6b6 15%, #383838 33%);
+    background: repeating-conic-gradient(#5fd9e2 0%, #5edb5a 15%, #5fd9e2 33%);
     height: 100dvh;
     width: 100dvw;
 }

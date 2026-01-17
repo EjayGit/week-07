@@ -39,11 +39,11 @@ form button:active{
 }
 
 .form-name{
-    color: whitesmoke;
+    color: rgb(70, 70, 70);
     font-weight: bold;
 }
 
 .form-post{
-    color: whitesmoke;
+    color: rgb(70, 70, 70);
     font-weight: bold;
 }
