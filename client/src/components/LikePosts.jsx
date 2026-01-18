@@ -16,7 +16,7 @@ export default function LikePosts({id, likes}){
             console.log(likeData);
             console.log(id);
             //fetch(`http://localhost:8080/likes`,{
-            fetch(`https://week-07-server.onrender.com/likes`,{
+            fetch(`https://week-07.onrender.com/likes`,{
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

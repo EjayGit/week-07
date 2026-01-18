@@ -20,7 +20,7 @@ export default function PostBlogs(){
         try{
             e.preventDefault();
             //fetch('http://localhost:8080/postblog',{
-            fetch('https://week-07-server.onrender.com/postblog',{
+            fetch('https://week-07.onrender.com/postblog',{
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
