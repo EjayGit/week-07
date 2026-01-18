@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to the server API. GET comfy!" });
 });
 
-app.get('/readBlogs', async (req, res) => {
+app.get('/readblogs', async (req, res) => {
     try {
         // const query = await db.query(`SELECT * FROM userData;`);
         const query = await db.query(
