@@ -55,3 +55,8 @@ h2{
     font-size: large;
     padding: 5px;
 }
+
+.blogBtns{
+    display: flex;
+    flex-direction: row;
+}

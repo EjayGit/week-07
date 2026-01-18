@@ -40,3 +40,24 @@ app.post("/postblog", async (req, res) => {
         res.status(500).json({ Error: error.message });
     }
 });
+
+app.post("/likes", async (req, res) => {
+    try{
+        const likeData = req.body.likeData;
+        const query = await db.query(
+            'UPDATE blogposts SET likes = likes + ($1) WHERE id = ($2)',
+            [likeData.value, likeData.id]
+        );
+    } catch(error){
+        res.status(500).json({Error: error.message});
+    }
+});
+
+app.delete('/:id', async (req, res) => {
+    try{    
+        const objRow = req.params.id;
+        const query = await db.query(`DELETE FROM blogposts WHERE id = ${objRow}`)
+    } catch (error){
+        console.error(`Error Message line 63: ${error.message}`);
+    }
+})

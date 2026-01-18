@@ -1,0 +1,17 @@
+.likeBtn{
+    margin: 3px;
+    padding: 3px;
+    background-color: rgb(205, 250, 120);
+    color: rgb(78, 78, 78);
+    border-radius: 10px;
+    border: 2px ridge darkslategrey;
+    font-size: small;
+}
+
+.likeBtn:hover{
+    scale: 1.05;
+}
+
+.likeBtn:active{
+    scale: 1;
+}

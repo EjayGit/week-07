@@ -1,0 +1,17 @@
+.delBtn{
+    margin: 3px;
+    padding: 3px;
+    background-color: rgb(206, 206, 206);
+    color: rgb(78, 78, 78);
+    border-radius: 10px;
+    border: 2px ridge darkslategrey;
+    font-size: small;
+}
+
+.delBtn:hover{
+    scale: 1.05;
+}
+
+.delBtn:active{
+    scale: 1;
+}
