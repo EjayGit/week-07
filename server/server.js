@@ -30,10 +30,10 @@ app.get('/readBlogs', async (req, res) => {
 
 app.post("/postblog", async (req, res) => {
     try {
-        const {name, post} = req.body.formValues;
+        const {name, location, post} = req.body.formValues;
         const query = await db.query(
-            `INSERT INTO blogposts (name, blogpost) VALUES ($1, $2)`,
-            [name, post]
+            `INSERT INTO blogposts (name, location, blogpost) VALUES ($1, $2, $3)`,
+            [name, location, post]
         );
         res.json({ status: "success" });
     } catch (error) {

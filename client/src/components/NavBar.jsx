@@ -6,7 +6,6 @@ export default function NavBar(){
         <div className='navbar'>
             <p><Link to={'/'}>Home</Link></p>
             <p><Link to={'/blogpage'}>Blog</Link></p>
-            <p><Link to={'/aboutpage'}>About</Link></p>
         </div>
     )
 }

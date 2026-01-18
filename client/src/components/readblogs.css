@@ -37,13 +37,21 @@ h2{
     z-index: 0;
     border-radius: 10px;
     padding: 5px;
-    font-size: x-large;
+    font-size: large;
+}
+
+.blog-location{
+    background: linear-gradient(#c4bab080, #af977e80);
+    z-index: 0;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: large;
 }
 
 .blog-post{
     background: linear-gradient(#c4bab080, #af977e80);
     z-index: 0;
     border-radius: 10px;
-    font-size: x-large;
+    font-size: large;
     padding: 5px;
 }
