@@ -1,7 +1,6 @@
 import './App.css'
 import {Routes, Route} from 'react-router'
 import BlogPage from './components/BlogPage'
-import AboutPage from './components/AboutPage'
 import HomePage from './components/HomePage'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -13,7 +12,6 @@ function App() {
       <Header/>
       <Routes>
         <Route element={<HomePage/>} path={'/'}/>
-        <Route element={<AboutPage/>} path={'/aboutpage'}/>
         <Route element={<BlogPage/>} path={'/blogpage'}/>
       </Routes>
       <Footer/>
