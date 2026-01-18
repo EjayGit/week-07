@@ -18,7 +18,6 @@ app.get("/", (req, res) => {
 
 app.get('/readblogs', async (req, res) => {
     try {
-        // const query = await db.query(`SELECT * FROM userData;`);
         const query = await db.query(
             `SELECT * FROM blogposts ORDER BY id DESC LIMIT 20`);
         res.json(query.rows);
