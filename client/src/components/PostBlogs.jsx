@@ -5,6 +5,7 @@ export default function PostBlogs(){
 
     const [formValues, setFormValues] = useState({
         name: '',
+        location: '',
         post: '',
     })
 
@@ -35,10 +36,13 @@ export default function PostBlogs(){
         <>
             <form className='form' onSubmit={handleFormSubmit}>
                 <label className='form-name' htmlFor="name">Name: </label>
-                <input id='form-name' type="text" name='name' placeholder="Name" value={formValues.staffname} required onChange={handleInputChange}/>
+                <input id='form-name' type="text" name='name' placeholder="Name" value={formValues.name} required onChange={handleInputChange}/>
+
+                <label className='form-name' htmlFor="location">Location: </label>
+                <input id='form-name' type="text" name='location' placeholder="Location" value={formValues.location} required onChange={handleInputChange}/>
 
                 <label className='form-post' htmlFor="post">Blog post: </label>
-                <textarea id='form-post' type="text" name='post' rows="4" cols="30" placeholder="Blog" value={formValues.email} required onChange={handleInputChange}/>
+                <textarea id='form-post' type="text" name='post' rows="4" cols="30" placeholder="Blog" value={formValues.post} required onChange={handleInputChange}/>
                 
                 <button type='submit'>Submit</button>
             </form>

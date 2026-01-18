@@ -24,6 +24,7 @@ export default function ReadBlogs(){
                 return( 
                 <div className='blog' key={index}>
                     <div className='blog-name'>{blog.name}</div>
+                    <div className='blog-location'>{blog.location}</div>
                     <div className='blog-post'>{blog.blogpost}</div>
                 </div>)
             })}
